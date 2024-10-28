@@ -1,14 +1,10 @@
-input_data = open('input.txt','r')
-data = input_data.read()
-a = int(data)
+n = 5
 b = 1
-if a > 1:
-    for i in range(1,a+1):
-        b = b * i
-else:
-    b = 1
-b = str(b)
-output_data = open("output.txt","w")
-output_data.write(b)
-input_data.close()
-output_data.close()
+b_list=[]
+for i in range(1,n+1):
+    b = b * i
+    b_list.append(b)
+print(b_list)
+
+
+
