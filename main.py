@@ -1,11 +1,14 @@
-inputdata = open('input.txt','r')
-data = inputdata.read()
+input_data = open('input.txt','r')
+data = input_data.read()
 a = int(data)
 b = 1
-for i in range(1,a+1):
-    b = b * i
+if a > 0:
+    for i in range(1,a+1):
+        b = b * i
+else:
+    b = 1
 b = str(b)
-outputdata = open("ouyput.txt","w")
-outputdata.write(b)
-inputdata.close()
-outputdata.close()
+output_data = open("ouyput.txt","w")
+output_data.write(b)
+input_data.close()
+output_data.close()
